@@ -145,7 +145,7 @@ select:hover,
   min-width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .books-list {
