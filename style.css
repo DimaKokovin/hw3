@@ -8,7 +8,7 @@
   outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
   margin: 0 auto;
   width: 100%;
-  max-width: auto;
+  max-width: 1140px;
   /* 📍 Максимальная ширина для контейнера */
 }
 
@@ -35,6 +35,7 @@ header span {
   /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
   display: flex;
   justify-content: center;
+  /* align-items: center; */
 }
 
 .main-section .wrapper {
@@ -69,13 +70,12 @@ header span {
   padding: 100px 0;
 }
 
-.about-section .wrapper  {
+.about-section .wrapper {
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 
-    gap: 79px;
-    display: flex;
-    flex-direction: column;
-}
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 select {
@@ -94,12 +94,12 @@ select {
 select:hover,
 .text-field:hover {
   /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+  cursor: pointer;
 }
 
 .info-wrapper {
   /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
   display: flex;
-  
 }
 
 .section-title {
@@ -110,24 +110,21 @@ select:hover,
 
 .frameworks,
 .books {
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  
-  
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .frameworks-list,
-.books-list  {
+.books-list {
   /* 📍 Свойства flexbox для отступов между элементами в списках  
   !!!!!!!!!! может быть это ошибка bools-list  а не books-rating*/
   min-width: 50%;
   display: flex;
-  
-  gap: 20px;
+
+  gap: 16px;
   flex-direction: column;
-  
 }
 
 .frameworks-list {
@@ -148,7 +145,7 @@ select:hover,
   min-width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .books-list {
@@ -196,7 +193,6 @@ form {
   background-color: #4075f1;
   color: #fff;
   /* border: 4px solid #141414; */
-
 }
 
 .line {
@@ -209,7 +205,6 @@ table {
   font-weight: 400;
   font-size: 14px;
   margin: 0 auto;
-
 }
 
 th,
@@ -229,13 +224,10 @@ footer {
   font-size: 14px;
   color: #2965f1;
   text-decoration: none;
-  
 }
 
 .footer-link:hover {
   /* 📍 Стили для ссылки при наведении курсора */
   cursor: pointer;
   text-decoration: underline;
-  
-  
 }
